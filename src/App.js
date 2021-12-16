@@ -18,7 +18,7 @@ class App extends Component {
       <div className="App">
         <div className='container'>
           <h1>change by</h1>
-          <input onChange={this.handleInputChange} value={this.state.input}></input>
+          <input onChange={this.handleInputChange} value={this.state.input} type='number'></input>
           <button onClick={()=>{this.handleCountChange(1)}}>increaase</button>
           <h1>{this.state.count}</h1>
           <button onClick={()=>{this.handleCountChange(-1)}}>decrease</button>
